@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form.</p>
+    <form id="survey-form">
+<fielset>
+  <label id="name-label">Enter your name <input placeholder="name" required id="name" type="text" /></label>
+  <label id="email-label">Enter your email <input placeholder="email" required id="email" type="email" /> </label>
+  <label id="number-label">Rate your experience from 1 to 10 <input placeholder="1" max="10" min="1" id="number" type="number" /></label>
+  </fieldset>
+<label>How did you hear about us?
+  <select id="dropdown">
+    <option>Website</option>
+    <option>Friend</option>
+    <option>Other</option>
+    </select>
+</label>
+<fieldset>
+        <legend>Male or Female?</legend>
+        <label for="male"><input value="1" id="male" type="radio" name="gender" class="inline" checked /> Male</label>
+        <label for="female"><input value="2" id="female" type="radio" name="gender" class="inline" /> Female</label>
+      </fieldset>
+
+      <fieldset>Please select all that apply:
+    <label>Happy<input value="1" type="checkbox" /></label>
+    <label>Sad<input value="2" type="checkbox" /></label>
+    <label>Angry<input value="3" type="checkbox" /></label>
+    <label>Nervous<input value="4" type="checkbox" /></label>
+    <label>Calm<input value="5" type="checkbox" /></label>
+
+    </fieldset>
+     <label for="comments">Provide additional comments:
+          <textarea id="comments" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+      </form>
+      <body>
+  </body>
+</html>
